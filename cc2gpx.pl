@@ -18,7 +18,8 @@ my $yearBase = 2000;
 my $knots2mps = 0.514444 ;
 
 print "<?xml version='1.0' encoding='UTF-8'?>
-<gpx version='1.0' creator='Perl' xmlns='http://www.topografix.com/GPX/1/0'><trk><trkseg>\n";
+## Garmin Virb needs 1.1 version of GPX
+<gpx version='1.1' creator='Perl' xmlns='http://www.topografix.com/GPX/1/1'><trk><trkseg>\n";
 
 while (<>) {
     chomp($_); $_ =~ s/\015//g; ## remove DOS e-o-ls
